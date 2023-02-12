@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package excelize;
+
+
+message TestEntry {
+
+ int32 id = 1;
+ string lp = 2;
+ float value = 3;
+
+
+}
+
+message Response {
+
+
+string response =1;
+}
+
+message Entries {
+
+	repeated TestEntry entries = 1;
+
+}
+
+service ExcelizeService {
+        rpc ProvideEntries(Entries) returns (Response) {}
+
+
+}

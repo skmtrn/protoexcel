@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-	"protoexcel/excelizegrpc"
+
+	"github.com/skmtrn/protoexcel/excelizegrpc"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

@@ -1,4 +1,4 @@
-module protoexcel
+module github.com/skmtrn/protoexcel
 
 go 1.18
 

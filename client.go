@@ -11,9 +11,9 @@ import (
 
 func main() {
 
-	te := excelizegrpc.TestEntry{Id: 3, Lp: "example LP", Value: 0.12}
+	te := excelizegrpc.ProtoEntry{Id: 3, Lp: "example LP", Value: 0.12}
 
-	var ste []*excelizegrpc.TestEntry
+	var ste []*excelizegrpc.ProtoEntry
 	ste = append(ste, &te)
 
 	entries := excelizegrpc.Entries{Entries: ste}

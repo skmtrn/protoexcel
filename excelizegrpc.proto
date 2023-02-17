@@ -1,14 +1,16 @@
 syntax = "proto3";
 
+
+import "google/protobuf/timestamp.proto";
 package excelizegrpc;
 
 
-message TestEntry {
+message ProtoEntry {
 
  int32 id = 1;
  string lp = 2;
- float value = 3;
-
+ double value = 3;
+ google.protobuf.Timestamp date = 4;
 
 }
 
@@ -20,7 +22,7 @@ string response =1;
 
 message Entries {
 
-	repeated TestEntry entries = 1;
+	repeated ProtoEntry entries = 1;
 
 }
 
